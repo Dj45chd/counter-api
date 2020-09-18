@@ -1,0 +1,26 @@
+databaseChangeLog:
+  - changeSet:
+      id: createTable-sample_paragraph
+      author: Dhiraj Sharma
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  constraints:
+                    nullable: false
+                  name: id
+                  type: CHAR(36)
+              - column:
+                  constraints:
+                    nullable: false
+                  name: text
+                  type: TEXT
+            tableName: sample_paragraph
+  - changeSet:
+      id: createTable-sample_paragraph-pk
+      author: Dhiraj Sharma
+      changes:
+        - addPrimaryKey:
+            columnNames: id
+            constraintName: pk_sample_paragraph_id
+            tableName: sample_paragraph
