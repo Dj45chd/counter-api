@@ -35,7 +35,7 @@ create database optusdb
 
 ```bash
 mvn package
-java -jar target/counter-api-0.0.1-SNAPSHOT.jar
+java -jar target/counter-api-1.0.0.jar
 ```
 
 Alternatively, you can run the app without packaging it using -
